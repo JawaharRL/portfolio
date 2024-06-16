@@ -1,0 +1,97 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: default;
+}
+.body{
+    background-color: #1a111b;
+}
+.nav_container{
+    display: flex;
+    background-color: #1a111b;
+    color: #fff;
+    justify-content: space-between;
+    padding: 30px 100px;
+    height: 20vh;
+}
+#logo{
+    /* background-color: rgb(126, 157, 58); */
+    font-family: outfit;
+    font-weight: 1000px;
+}
+.nav_links{
+    width: 500px;
+    /* background-color: rgb(126, 157, 58); */
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+.nav_links >*:hover{
+    cursor: pointer;
+    transition: 200ms;
+    transform: translateY(-5px);
+    border-bottom: 4px solid #9747FF;
+}
+
+.name_greetings{
+    align-content: center;
+    /* background-color: rgb(155, 114, 26); */
+    color: #fff;
+    text-align: center;
+    width: 50%;
+    height: 80vh;
+}
+
+#name{
+    font-family: outfit;
+    font-size:60px;
+}
+#greeting{
+    font-size: 40px;
+    font-weight: 100;
+}
+#role{
+
+    padding-bottom: 20px;
+}
+#download_but{
+    all:unset;
+    padding: 5px 16px 7px;
+    background-color: #9747FF;
+    border-radius: 10px; 
+    margin-top: 15px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+#download_but:hover{
+    box-shadow: -2px 2px 2px 0;
+   
+}
+#work_but{
+    all:unset;
+    padding: 5px 16px 7px;
+    border:2px solid #9747FF;
+    border-radius: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.photo{
+    width: 40%;
+    height: 70vh ;
+    background-color:rgba(255, 255, 255, 0.3) ;
+    border-radius: 20px;
+}
+.home_container{
+    display: flex;
+}
+
+@media (width<=485px){
+    .home_container{
+
+        flex-direction: column-reverse;
+        
+        
+    }
+}

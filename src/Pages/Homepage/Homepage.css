@@ -1,97 +1,254 @@
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    cursor: default;
 }
-.body{
-    background-color: #1a111b;
-}
+
+
+/* nav starts */
 .nav_container{
+    width: 100%;
+    position: fixed;
+    background-color: #fff;
     display: flex;
-    background-color: #1a111b;
-    color: #fff;
+    padding: 50px 120px 20px;
     justify-content: space-between;
-    padding: 30px 100px;
-    height: 20vh;
-}
+    z-index: 2;
+
+}   
 #logo{
-    /* background-color: rgb(126, 157, 58); */
-    font-family: outfit;
-    font-weight: 1000px;
+    width: 50px;
+
 }
-.nav_links{
-    width: 500px;
-    /* background-color: rgb(126, 157, 58); */
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-}
-.nav_links >*:hover{
-    cursor: pointer;
-    transition: 200ms;
-    transform: translateY(-5px);
-    border-bottom: 4px solid #9747FF;
+.contact_but{
+    all: unset;
+    color: #7510F7;
+    padding: 4px 16px;
+    border-radius: 100px;
+    border: 1px solid #7510F7;
 }
 
-.name_greetings{
-    align-content: center;
-    /* background-color: rgb(155, 114, 26); */
-    color: #fff;
-    text-align: center;
-    width: 50%;
-    height: 80vh;
-}
+/* nav ends */
 
-#name{
-    font-family: outfit;
-    font-size:60px;
-}
-#greeting{
-    font-size: 40px;
-    font-weight: 100;
-}
-#role{
 
-    padding-bottom: 20px;
-}
-#download_but{
-    all:unset;
-    padding: 5px 16px 7px;
-    background-color: #9747FF;
-    border-radius: 10px; 
-    margin-top: 15px;
-    margin-right: 10px;
-    cursor: pointer;
-}
-#download_but:hover{
-    box-shadow: -2px 2px 2px 0;
-   
-}
-#work_but{
-    all:unset;
-    padding: 5px 16px 7px;
-    border:2px solid #9747FF;
-    border-radius: 10px;
-    margin-left: 10px;
-    cursor: pointer;
-}
-.photo{
-    width: 40%;
-    height: 70vh ;
-    background-color:rgba(255, 255, 255, 0.3) ;
-    border-radius: 20px;
-}
-.home_container{
-    display: flex;
-}
-
-@media (width<=485px){
-    .home_container{
-
-        flex-direction: column-reverse;
-        
-        
+/* photo starts */
+    .photo_container{
+        height: 55vh;
+        background-color: rgb(202, 230, 255);
     }
+
+
+
+/* photo ends */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* greeting & name starts */
+.name_container{
+    text-align: center;
+    /* background-color: #969696; */
+    margin-bottom: 5%;
+}
+
+
+
+.cta_container{
+    display: flex;
+    justify-content: center;
+    margin-top: 1%;
+
+}
+
+.resume_download_button,.project_button{
+    all: unset;
+    margin: 10px;
+}
+.resume_download_button{
+    background: #7510F7;
+    color: #fff;
+    padding: 10px 26px;
+    border-radius: 50px;
+}
+.project_button{
+    color: #7510F7;
+    padding: 10px 26px;
+    border-radius: 50px;
+    border: 1px solid #7510F7;
+}
+
+
+#greetings{
+    font-family: outfit;
+    font-weight: 100;
+    font-size: 35px;
+
+}
+#myname{
+    font-family: outfit;
+    font-weight: 500;
+    font-size:  60px;
+
+}
+/* greeting & name ends */
+
+
+
+/* about starts */
+
+.about_container{
+    text-align: center;
+    padding: 50px 120px; 
+    background-color: #7510F7; 
+    color: #ffffff;
+    height: 60vh;
+    z-index: 1;
+    position: relative;
+}
+.about_container>*{
+    
+    margin: 20px 0px;
+}
+
+
+
+/* about ends */
+
+
+
+/* skillset starts */
+
+
+.design_card{
+    margin: 0px 120px;
+    padding: 80px;
+    border-radius: 20px;
+    text-align: center;
+    display:flex ;
+    flex-direction: column;
+    gap: 50px;
+    z-index: 1;
+    position: relative;
+    background: #FFF;
+    box-shadow: 6px 10px 30px 0px rgba(117, 16, 247, 0.15) inset, -6px 10px 31px 0px rgba(0, 0, 0, 0.30);
+    margin-top: -200px;
+}
+.list_container{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 120px;
+
+}
+.list_headings{
+    color: #7510F7;
+    list-style: none;
+    
+}
+ul>*{
+    list-style: none;
+}
+
+
+
+.dev_card{
+    margin: 30px 120px;
+    padding: 80px;
+    border-radius: 20px;
+    text-align: center;
+    background-color: antiquewhite;
+    display:flex ;
+    flex-direction: column;
+    gap: 50px;
+    background: #FFF;
+    box-shadow: 6px 10px 30px 0px rgba(117, 16, 247, 0.15) inset, -6px 10px 31px 0px rgba(0, 0, 0, 0.30);
+
+}
+/* skilset ends */
+
+
+
+
+
+/* contact starts */
+
+
+ .contact_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 0px 120px;
+}
+#contact_heading{
+    font-size:xx-large ;
+    color: #7510F7;
+}
+
+
+.contact_form{
+   background-color: #FFF;
+
+}
+textarea {
+    resize: none;
+    width: 1030px;
+    height: 150px;
+    border-radius: 8px;
+    border: 1px solid rgba(117, 16, 247, 0.40);
+  }
+
+  .name_mail{
+    display:flex ;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+  }
+
+  input{
+    all: unset;
+    width: 500px;
+    height: 45px;
+    border-radius: 8px;
+    border: 1px solid rgba(117, 16, 247, 0.40);
+    justify-content: space-evenly;
+    margin-right:30px ;
+    padding-left: 16px;
+  }
+
+  input::placeholder{
+    padding-left: 16px;
+  }
+
+
+
+  .form_button{
+
+    all: unset;
+    margin-top: 30px;
+
+    color: #7510F7;
+    padding: 10px 50px;
+    border-radius: 100px;
+    border: 1px solid #7510F7;
+  } 
+/* contact ends */
+
+
+footer{
+    margin-top:50px;
+    height: 30vh;
+    background-color: #7510F7;
+    text-align: center;
+    color: #FFF;
+
 }

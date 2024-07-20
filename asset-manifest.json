@@ -1,15 +1,36 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.5961fa87.css",
-    "main.js": "/portfolio/static/js/main.530746f2.js",
+    "main.css": "/portfolio/static/css/main.b64ce361.css",
+    "main.js": "/portfolio/static/js/main.2f8ab095.js",
     "static/js/453.1407b060.chunk.js": "/portfolio/static/js/453.1407b060.chunk.js",
+    "static/media/ClashDisplay-Variable.ttf": "/portfolio/static/media/ClashDisplay-Variable.e7f67b72cbf79f80c9c7.ttf",
+    "static/media/ClashDisplay-Light.ttf": "/portfolio/static/media/ClashDisplay-Light.65f6b9963b2bc29f88d0.ttf",
+    "static/media/ClashDisplay-Extralight.ttf": "/portfolio/static/media/ClashDisplay-Extralight.4b744d1b1e49894d8db2.ttf",
+    "static/media/ClashDisplay-Medium.ttf": "/portfolio/static/media/ClashDisplay-Medium.a55835c0e75979b02fcb.ttf",
+    "static/media/ClashDisplay-Semibold.ttf": "/portfolio/static/media/ClashDisplay-Semibold.fe7b20eb73776202f79f.ttf",
+    "static/media/ClashDisplay-Regular.ttf": "/portfolio/static/media/ClashDisplay-Regular.810c6b29f523c5d0ad44.ttf",
+    "static/media/ClashDisplay-Bold.ttf": "/portfolio/static/media/ClashDisplay-Bold.476ca58563829751989f.ttf",
+    "static/media/ClashDisplay-Variable.woff2": "/portfolio/static/media/ClashDisplay-Variable.27b50dcdd5ced9f74da0.woff2",
+    "static/media/ClashDisplay-Variable.woff": "/portfolio/static/media/ClashDisplay-Variable.d2735542013ee4bde5ad.woff",
+    "static/media/ClashDisplay-Semibold.woff": "/portfolio/static/media/ClashDisplay-Semibold.52ec5aaabca80f39cd4d.woff",
+    "static/media/ClashDisplay-Medium.woff": "/portfolio/static/media/ClashDisplay-Medium.d059aba57d21630bbeb1.woff",
+    "static/media/ClashDisplay-Regular.woff": "/portfolio/static/media/ClashDisplay-Regular.bddfbdc9d46fb063a682.woff",
+    "static/media/ClashDisplay-Light.woff": "/portfolio/static/media/ClashDisplay-Light.2d96b3662f1262b6c456.woff",
+    "static/media/ClashDisplay-Bold.woff": "/portfolio/static/media/ClashDisplay-Bold.ae5f509371f2e91d237c.woff",
+    "static/media/ClashDisplay-Extralight.woff": "/portfolio/static/media/ClashDisplay-Extralight.698f5feb7b168e80bc3b.woff",
+    "static/media/ClashDisplay-Light.woff2": "/portfolio/static/media/ClashDisplay-Light.2ad87a1106f296704c85.woff2",
+    "static/media/ClashDisplay-Semibold.woff2": "/portfolio/static/media/ClashDisplay-Semibold.aafc18ae9600df8496dc.woff2",
+    "static/media/ClashDisplay-Medium.woff2": "/portfolio/static/media/ClashDisplay-Medium.88a32cc8fc026d95af05.woff2",
+    "static/media/ClashDisplay-Regular.woff2": "/portfolio/static/media/ClashDisplay-Regular.98b52bdf102085f28108.woff2",
+    "static/media/ClashDisplay-Bold.woff2": "/portfolio/static/media/ClashDisplay-Bold.e2f8628a6f360f644a76.woff2",
+    "static/media/ClashDisplay-Extralight.woff2": "/portfolio/static/media/ClashDisplay-Extralight.8f792be62d02ca420577.woff2",
     "index.html": "/portfolio/index.html",
-    "main.5961fa87.css.map": "/portfolio/static/css/main.5961fa87.css.map",
-    "main.530746f2.js.map": "/portfolio/static/js/main.530746f2.js.map",
+    "main.b64ce361.css.map": "/portfolio/static/css/main.b64ce361.css.map",
+    "main.2f8ab095.js.map": "/portfolio/static/js/main.2f8ab095.js.map",
     "453.1407b060.chunk.js.map": "/portfolio/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5961fa87.css",
-    "static/js/main.530746f2.js"
+    "static/css/main.b64ce361.css",
+    "static/js/main.2f8ab095.js"
   ]
 }

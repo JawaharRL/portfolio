@@ -1,18 +1,24 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.0d88c5d0.css",
-    "main.js": "/portfolio/static/js/main.ec9be32c.js",
-    "static/css/483.deb9b244.chunk.css": "/portfolio/static/css/483.deb9b244.chunk.css",
-    "static/js/483.78c4d2df.chunk.js": "/portfolio/static/js/483.78c4d2df.chunk.js",
+    "main.css": "/portfolio/static/css/main.259fa48a.css",
+    "main.js": "/portfolio/static/js/main.7ec54069.js",
+    "static/css/483.1e855da3.chunk.css": "/portfolio/static/css/483.1e855da3.chunk.css",
+    "static/js/483.fd753ab7.chunk.js": "/portfolio/static/js/483.fd753ab7.chunk.js",
     "static/js/453.1407b060.chunk.js": "/portfolio/static/js/453.1407b060.chunk.js",
     "static/media/Dongle-Bold.ttf": "/portfolio/static/media/Dongle-Bold.a239ec40fc2b724a26ae.ttf",
     "static/media/Dongle-Regular.ttf": "/portfolio/static/media/Dongle-Regular.be19c2ab1576230dd28d.ttf",
     "static/media/Dongle-Light.ttf": "/portfolio/static/media/Dongle-Light.099c1b232ee32aedbc6d.ttf",
-    "static/media/erpimg.webp": "/portfolio/static/media/erpimg.783437f7ecea8b237d44.webp",
+    "static/media/portfoliocode.png": "/portfolio/static/media/portfoliocode.9c247d46f3933385d506.png",
+    "static/media/erpcode.png": "/portfolio/static/media/erpcode.dd252715ab31c456055b.png",
     "static/media/taxiappimg.webp": "/portfolio/static/media/taxiappimg.6c211e4bb220608371a9.webp",
-    "static/media/clothwebimg.webp": "/portfolio/static/media/clothwebimg.a1cc89ec39294d705b6a.webp",
+    "static/media/erpimg.webp": "/portfolio/static/media/erpimg.81e4f84169b32df51447.webp",
+    "static/media/taxiappsignup.jpeg": "/portfolio/static/media/taxiappsignup.ceb03956453a9355f291.jpeg",
     "static/media/weatherappimg.webp": "/portfolio/static/media/weatherappimg.7e90a76f20dc21f0d30d.webp",
+    "static/media/clothwebimg.webp": "/portfolio/static/media/clothwebimg.5b656115da2911d8dccb.webp",
+    "static/media/footwearposter.webp": "/portfolio/static/media/footwearposter.afda323907ad81f684bc.webp",
+    "static/media/restaurantposter.webp": "/portfolio/static/media/restaurantposter.ea9935be0f6715e80a3b.webp",
     "static/media/ClashDisplay-Variable.ttf": "/portfolio/static/media/ClashDisplay-Variable.e7f67b72cbf79f80c9c7.ttf",
+    "static/media/clothposter.png": "/portfolio/static/media/clothposter.df71162e3d2c99107b47.png",
     "static/media/ClashDisplay-Light.ttf": "/portfolio/static/media/ClashDisplay-Light.65f6b9963b2bc29f88d0.ttf",
     "static/media/ClashDisplay-Extralight.ttf": "/portfolio/static/media/ClashDisplay-Extralight.4b744d1b1e49894d8db2.ttf",
     "static/media/ClashDisplay-Medium.ttf": "/portfolio/static/media/ClashDisplay-Medium.a55835c0e75979b02fcb.ttf",
@@ -42,14 +48,14 @@
     "static/media/css3.svg": "/portfolio/static/media/css3.b072f246acdc133e21186cf72138a3b3.svg",
     "static/media/html5.svg": "/portfolio/static/media/html5.5a388de592bdf7a6f44ae2acc154efbc.svg",
     "static/media/top.svg": "/portfolio/static/media/top.864fabfe796cdeb70e2462cb2160ec86.svg",
-    "main.0d88c5d0.css.map": "/portfolio/static/css/main.0d88c5d0.css.map",
-    "main.ec9be32c.js.map": "/portfolio/static/js/main.ec9be32c.js.map",
-    "483.deb9b244.chunk.css.map": "/portfolio/static/css/483.deb9b244.chunk.css.map",
-    "483.78c4d2df.chunk.js.map": "/portfolio/static/js/483.78c4d2df.chunk.js.map",
+    "main.259fa48a.css.map": "/portfolio/static/css/main.259fa48a.css.map",
+    "main.7ec54069.js.map": "/portfolio/static/js/main.7ec54069.js.map",
+    "483.1e855da3.chunk.css.map": "/portfolio/static/css/483.1e855da3.chunk.css.map",
+    "483.fd753ab7.chunk.js.map": "/portfolio/static/js/483.fd753ab7.chunk.js.map",
     "453.1407b060.chunk.js.map": "/portfolio/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0d88c5d0.css",
-    "static/js/main.ec9be32c.js"
+    "static/css/main.259fa48a.css",
+    "static/js/main.7ec54069.js"
   ]
 }

@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkportfolio=self.webpackChunkportfolio||[]).push([[360],{360:(p,e,t)=>{p.exports=t.p+"static/media/taxiappimg.6c211e4bb220608371a9.webp"}}]);

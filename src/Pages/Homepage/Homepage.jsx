@@ -49,12 +49,12 @@ function Homepage() {
   const workSectionRef = useRef(null);
   
 
-  const pdfUrl = "/JawaharRL-Resume.pdf"; // Update this path to your PDF file
+  const pdfUrl = "/JawaharRL-Resume.pdf"; 
 
   const handleDownload = () => {
     const link = document.createElement('a');
     link.href = pdfUrl;
-    link.download = 'JawaharRL.pdf'; // Specify the name for the downloaded file
+    link.download = 'JawaharRL-Resume.pdf'; // Specify the name for the downloaded file
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);

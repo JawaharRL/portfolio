@@ -13,7 +13,10 @@ import csslogo from '../../Assets/css3.svg'
 import reactlogo from '../../Assets/react.svg'
 import pic from '../../Assets/pic.png'
 import Top from '../../Assets/top.svg'
-import work1 from '../../Assets/work1.png'
+import erpimg from '../../Assets/erpimg.jpeg'
+import taxiappimg from '../../Assets/taxiappimg.jpeg'
+import weatherappimg from '../../Assets/weatherappimg.jpeg'
+import clothwebimg from '../../Assets/clothwebimg.jpeg'
 import Name from '../../Assets/Codeink1.png'
 import footerlogo from '../../Assets/footer logo.png'
 import Projectcard from '../../Componants/Projectcard/Projectcard.js'
@@ -317,10 +320,10 @@ function Homepage() {
         <h3 className="catagory">UI Projects</h3>
         <div className="ui_projects">
           
-        <Projectcard title="Weather app" button_name="Viwe figma" workimg={work1}/>
-        <Projectcard title="Taxi app" button_name="Viwe figma" />
-        <Projectcard title="Cloth website" button_name="Viwe figma" />
-        <Projectcard title="ERP Application" button_name="Viwe figma"/>
+        <Projectcard title="Weather app" button_name="View figma" workimg={weatherappimg}/>
+        <Projectcard title="Taxi app" button_name="View figma"  workimg={taxiappimg}/>
+        <Projectcard title="Cloth website" button_name="View figma" workimg={clothwebimg} />
+        <Projectcard title="ERP Application" button_name="View figma" workimg={erpimg}/>
       
         </div>
         <h3 className="catagory">Frontend Projects</h3>

@@ -14,15 +14,33 @@ import reactlogo from '../../Assets/react.svg'
 import pic from '../../Assets/pic.png'
 import Top from '../../Assets/top.svg'
 import Name from '../../Assets/Codeink1.png'
+import portfoliocode from '../../Assets/portfoliocode.png'
+import erpcode from '../../Assets/erpcode.png'
+import erpimg from '../../Assets/erpimg.webp'
+import taxiappimg from '../../Assets/taxiappimg.webp'
+import clothwebimg from '../../Assets/clothwebimg.webp'
+import weatherappimg from '../../Assets/weatherappimg.webp'
+import taxiappsignup from '../../Assets/taxiappsignup.jpeg'
+import restaurantposter from '../../Assets/restaurantposter.webp'
+import  footwearposter from '../../Assets/footwearposter.webp'
+import  clothposter from '../../Assets/clothposter.png'
 import footerlogo from '../../Assets/footer logo.png'
-const erpimg =lazy(()=>import ('../../Assets/erpimg.webp'))
-const taxiappimg =lazy(()=>import ('../../Assets/taxiappimg.webp'))
-const weatherappimg =lazy(()=>import ('../../Assets/weatherappimg.webp'))
-const clothwebimg =lazy(()=>import ('../../Assets/clothwebimg.webp'))
 // import Projectcard from '../../Componants/Projectcard/Projectcard.js'
 const Projectcard =lazy(()=>import ('../../Componants/Projectcard/Projectcard.js'))
 
 function Homepage() {
+  const weatherapplink="https://www.figma.com/design/pFmN8Sc2sOfUAgjHEiKkhd/Weather-app?node-id=2-2&t=QZdVzgGzG5qPbzde-1"
+  const taxiappsignuplink="https://www.figma.com/design/xE4Uvd5oZ1BGlx72JAB4AG/Tagyourtaxi?node-id=0-1&t=nPiTF1VPxBxbIS9i-1"
+  const erpimglink="https://www.figma.com/design/k08kclPuAvi9VwdvQT6nEj/ERP?node-id=470-262&t=pyS2g6s8lLx309vc-1"
+  const clothwebimglink="https://www.figma.com/design/RRthXppkyvAgzAnLXbvQse/Clothweb?node-id=0-1&t=O8V6zuQBXPXhMNYB-1"
+  const taxiappimglink="."
+
+  const restaurantposterlink="/restaurantposter.webp"
+
+   const erprepolink="https://github.com/JawaharRL/erp-frontend.git"
+  const Portfoliorepolink="https://github.com/JawaharRL/portfolio.git"
+
+
   const [hoveredRole, setHoveredRole] = useState();
   const [loading, setLoading] = useState(false);
   const { ref:myRef, inView: isvisible} = useInView();
@@ -124,11 +142,7 @@ function Homepage() {
 
 {/* bgstarts */}
 
-<div class="circle circle1"></div>
-<div class="circle circle2"></div>
-<div class="circle circle3"></div>
-<div class="circle circle4"></div>
-<div class="circle circle"></div>
+
 
 
 {/* bgends */}
@@ -165,6 +179,11 @@ function Homepage() {
         <img  className="design_logos" src={reactlogo} alt="" />
         </div>
       </div>
+      <div class="circle circle1"></div>
+<div class="circle circle2"></div>
+<div class="circle circle3"></div>
+<div class="circle circle4"></div>
+<div class="circle circle5"></div>
     </div>
 
 
@@ -319,20 +338,28 @@ function Homepage() {
             <h3 id="heading"><b>My works</b></h3>
         </div>
         <h3 className="catagory">UI Projects</h3>
-        <div className="ui_projects">
+        <div className="projects">
+
+        <Projectcard title="Cloth website" button_name="View figma" workimg={clothwebimg} goto={clothwebimglink}/> 
+        <Projectcard title="ERP Application" button_name="View figma" workimg={erpimg} goto={erpimglink}/>
+        <Projectcard title="Taxi app signup flow" button_name="View figma" workimg={taxiappsignup} goto={taxiappsignuplink}/>
+        <Projectcard title="Weather app" button_name="View figma" workimg={weatherappimg} goto={weatherapplink} />
+        <Projectcard title="Taxi app" button_name="View figma"  workimg={taxiappimg} goto={taxiappimglink}/>
+        </div>
+        <h3 className="catagory">Poster Designs</h3>
+        <div className="projects">
           
-        <Projectcard title="Weather app" button_name="View figma" workimg={weatherappimg}/>
-        <Projectcard title="Taxi app" button_name="View figma"  workimg={taxiappimg}/>
-        <Projectcard title="Cloth website" button_name="View figma" workimg={clothwebimg} />
-        <Projectcard title="ERP Application" button_name="View figma" workimg={erpimg}/>
-      
+        <Projectcard title="Restaurant poster" button_name="View" workimg={restaurantposter} goto={restaurantposterlink}/>
+        <Projectcard title="Footwear poster" button_name="View" workimg={footwearposter}/>
+        <Projectcard title="Clothshop poster" button_name="View" workimg={clothposter}/>
+       
         </div>
         <h3 className="catagory">Frontend Projects</h3>
-        <div className="ui_projects">
+        <div className="projects">
           
-        <Projectcard />
-        <Projectcard />
-        <Projectcard />
+        <Projectcard title="ERP Application" button_name="open repo" workimg={erpcode} goto={erprepolink}/>
+        <Projectcard title="Portfolio" button_name="open repo" workimg={portfoliocode}  goto={Portfoliorepolink}/>
+
         </div>
 {/* WORKS ends */}
 {/* contact starts */}
@@ -393,7 +420,7 @@ function Homepage() {
 
   <img  id="footer_logo" src={footerlogo} alt="" />
   <img  id="footer_name" src={Name} alt="" />
- <p id="social_link"> Reach me on</p>
+ <p id="social_link"> Designed and Developed by Jawahar RL</p>
 
 </footer>
 

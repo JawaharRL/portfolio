@@ -43,6 +43,7 @@
     justify-content: center;
     align-items: center;
     position: absolute;
+    margin-top: 90px;
     top: 50%;
     left: 50%;
     opacity: 0.15;
@@ -255,6 +256,10 @@
     border-radius: 50px;
     cursor: pointer;
 }
+.resume_download_button:hover{
+    box-shadow: 0px 4px 7.3px 0px rgba(0, 0, 0, 0.25);
+
+}
 .project_button{
     cursor: pointer;
     font-family: 'Dongle-Bold';
@@ -380,7 +385,7 @@ ul>*{
 
 
 /* works starts */
-.ui_projects{
+.projects{
     display: flex;
     flex-wrap: wrap;
   padding: 30px clamp(10px,5vw,120px);
@@ -469,11 +474,14 @@ textarea {
 footer{
     padding-top:30px ;
     margin-top:50px;
-    height: 30vh;
+    height: 20vh;
     background-color: #7510F7;
     text-align: center;
     color: #FFF;
 
+}
+#social_link{
+    font-size: clamp(0.25rem,2vw,1rem);
 }
 .juNRvt {
     margin-top: -1.5rem;

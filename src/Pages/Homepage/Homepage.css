@@ -9,7 +9,7 @@
 .nav_container{
     width: 100%;
     position: fixed;
-    background-color: #fff;
+    background-color: #ffffff;
     display: flex;
     padding: 40px clamp(40px,10vw,120px);
     justify-content: space-between;
@@ -21,7 +21,7 @@
 }
 .contact_but{
     all: unset;
-    color: #7510F7;
+    color: #7510f7;
     font-family: 'Dongle-Bold';
     font-size:clamp(1rem,5vw, 1.3125rem);
     padding:4px 16px 2px 16px;
@@ -30,15 +30,184 @@
 }
 
 /* nav ends */
+/* bgstarts */
+
+:root {
+    --circle-size:20vw; /* Base size for the smallest circle */
+  }
+  
+  .circle {
+    display: flex;
+    border: 1px solid #7510F7;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    opacity: 0.15;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+  }
+  
+  .circle1 {
+    width: calc(var(--circle-size) * 1.67); /* 50vw */
+    height: calc(var(--circle-size) * 1.67);
+  }
+.circle2 {
+    width: calc(var(--circle-size) * 2.33); /* 70vw */
+    height: calc(var(--circle-size) * 2.33);
+}
+.circle3 {
+    width: calc(var(--circle-size) * 3); /* 90vw */
+    height: calc(var(--circle-size) * 3);
+}
+  
+.circle4 {
+    width: calc(var(--circle-size) * 3.67); /* 110vw */
+    height: calc(var(--circle-size) * 3.67);
+}
+  
+  .circle5 {
+    width: calc(var(--circle-size) * 4.33); /* 1300px */
+    height: calc(var(--circle-size) * 4.33);
+  }
+
+
+
+/* bgends */
 
 
 /* photo starts */
-    .photo_container{
-        height: 65vh;
-        background-color: rgb(202, 230, 255);
+.photo_container {
+    height: fit-content;
+    margin-bottom: 1rem;
+    display: flex;
+    color: black;
+    justify-content: center; /* Center items */
+    align-items: center;
+    position: relative;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    padding: 0 clamp(10px, 5vw, 20px); /* Responsive padding */
+}
+
+.image_container {
+    transition: transform 800ms cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative; /* Ensure relative positioning */
+    z-index: 5;
+    margin: 0 clamp(10px, 5vw, 20px); /* Responsive margin */
+}
+
+.profile_pic {
+    margin-top: clamp(2rem, 5vw, 3rem); /* Responsive margin */
+    width: 25vw; /* Responsive width */
+    max-width: 300px; /* Limit maximum size */
+}
+
+.roles {
+    cursor: default;
+    margin-top: clamp(4rem, 15vw, 10rem); /* Responsive margin */
+    margin-left: clamp(10px, 5vw, 20px); /* Responsive left margin */
+    margin-right: clamp(10px, 5vw, 20px); /* Responsive right margin */
+    padding: clamp(30px, 5vw, 50px) 0; /* Responsive padding */
+    font-family: 'Dongle-bold';
+    font-size: clamp(1.5rem, 5vw, 3rem); /* Responsive font size */
+}
+
+/* Responsive padding */
+.designer {
+    padding-right: clamp(10px, 8vw, 190px); /* Responsive padding */
+}
+
+.designer:hover {
+    scale: 1.1;
+    transition: ease-out 1000ms;
+}
+
+.developer:hover {
+    scale: 1.1;
+    transition: ease-out 1000ms;
+}
+
+.logo-set1, .logo-set2 {
+    display: none;
+}
+
+.logo-set1 > * {
+    padding-right: clamp(5px, 2vw, 10px); /* Responsive padding */
+}
+
+.logo-set2 > * {
+    padding-right: clamp(5px, 2vw, 10px); /* Responsive padding */
+}
+
+.developer {
+    padding-left: clamp(10px, 8vw, 190px); /* Responsive padding */
+}
+
+/* Move image based on class added by React state */
+.photo_container.designer-hover .image_container {
+    transform: translateX(200px);
+    transition: ease-out 1000ms;
+}
+
+.photo_container.designer-hover .logo-set1 {
+    display: block;
+}
+
+.photo_container.developer-hover .logo-set2 {
+    display: block;
+}
+
+.photo_container.designer-hover .developer {
+    scale: 0.6;
+    transform: translateY(-20px);
+    transition: ease-out 900ms;
+    opacity: 0.5;
+}
+
+.photo_container.developer-hover .image_container {
+    transform: translateX(-200px);
+    transition: ease-out 1000ms;
+}
+
+.photo_container.developer-hover .designer {
+    scale: 0.6;
+    /* transform: translateY(-20px); */
+    transition: ease-out 900ms;
+    opacity: 0.5;
+}
+
+.design_logos {
+    height: clamp(20px, 5vw, 30px); /* Responsive height */
+}
+
+
+@media only screen and (max-width: 600px) {
+    .profile_pic {
+        width: 70vw; /* Increase width for mobile */
+        max-width: none; /* Remove max-width for better scaling */
     }
 
+    .roles {
+        font-size: clamp(1.2rem, 8vw, 2.5rem); /* Adjust font size for mobile */
+        margin-top: 4rem; /* Adjust margin for better spacing */
+    }
 
+    .designer, .developer {
+        order: 2;
+        padding: 0; /* Remove padding for mobile */
+        margin: 0; /* Remove margin for mobile */
+    }
+
+    .photo_container {
+        flex-direction: column; /* Stack items vertically on small screens */
+    }
+
+    .image_container {
+        margin: 1rem 0; /* Adjust margin for better spacing */
+    }
+} 
 
 /* photo ends */
 
@@ -71,10 +240,11 @@
 }
 
 .resume_download_button,.project_button{
-    
+
     all: unset;
     margin: 10px;
     font-size: clamp(1rem,5vw,1.75rem);
+
 }
 .resume_download_button{
     font-family: 'Dongle-Bold';
@@ -82,8 +252,10 @@
     color: #fff;
     padding: 4px 26px 2px;
     border-radius: 50px;
+    cursor: pointer;
 }
 .project_button{
+    cursor: pointer;
     font-family: 'Dongle-Bold';
     color: #7510F7;
     padding: 4px 26px 2px;
@@ -139,7 +311,7 @@
 
 .design_card{
     margin: 0px clamp(10px,10vw,120px);
-    padding: clamp(30px,10vw,80px);
+    padding: clamp(30px,10vw,60px);
     border-radius: 20px;
     text-align: center;
     display:flex ;
@@ -156,18 +328,35 @@
     display: flex;
     text-align: center;
     justify-content: center;
-    gap: 120px;
+    gap: clamp(5rem,15vw,12rem);
 
 }
 .list_headings{
     color: #7510F7;
     list-style: none;
+    font-size: clamp(1rem,4vw,1.25rem);
     
 }
 ul>*{
     list-style: none;
+    font-size: clamp(0.9rem,3vw,1rem);
+    padding-bottom: 10px;
 }
 
+#skill_heading{
+    /* padding-bottom: 20px; */
+    font-family: 'Dongle-Bold';
+    font-size: clamp(2.375rem,10vw,3.125rem);
+    padding-bottom: 20px;
+    line-height: 2rem;
+}
+#skill_description{
+    padding-bottom: -20px;
+    font-size: clamp(1rem,8vw,2.375rem);
+    font-weight: 300;
+    line-height: clamp(1rem,6vw,2rem);
+    font-family: 'Dongle-Light';
+}
 
 
 .dev_card{
@@ -188,6 +377,18 @@ ul>*{
 
 
 
+
+/* works starts */
+.ui_projects{
+    display: flex;
+    flex-wrap: wrap;
+  padding: 30px clamp(10px,5vw,120px);
+    justify-content: space-evenly;
+}
+.catagory{
+    text-align: center;
+}
+/* works ends */
 
 /* contact starts */
 
@@ -272,6 +473,11 @@ footer{
     text-align: center;
     color: #FFF;
 
+}
+.juNRvt {
+    margin-top: -1.5rem;
+    display: flex;
+    justify-content: center;
 }
 
 #footer_logo{

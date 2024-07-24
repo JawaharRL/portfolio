@@ -1,0 +1,29 @@
+#work_img{
+    width: clamp(100px,20vw,240px);
+    border-radius:clamp( 8px,4vw,16px);
+    padding: clamp(5px,7vw,8px);
+}
+#work_title{
+    font-size: clamp(0.5rem,4vw,1.25rem);
+}
+.project_card_container{
+    display: flex;
+    padding: clamp(0.5rem,4vw,1.25rem);
+    border-radius: clamp(12px,2vw,20px);
+    align-items: center;
+    flex-direction: column;
+    width: fit-content;
+    background: linear-gradient(163deg, #C99FFF 46.41%, #A46CEC 88.13%);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin: clamp(10px,5vw,0px);
+}
+.work_card_button{
+    all: unset;
+    padding-top: clamp(5px,3vw,10px);
+    padding-bottom: clamp(5px,3vw,10px);
+    width: clamp(100px,20vw,170px);
+    text-align: center;
+    background-color: #ffff;
+    border-radius: 16px;
+    font-size: clamp(0.75rem,3vw,1rem);
+}

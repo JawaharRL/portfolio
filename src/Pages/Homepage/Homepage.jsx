@@ -5,17 +5,27 @@ import Swal from 'sweetalert2'
 import { LineWave } from 'react-loader-spinner';
 import './Homepage.css'
 import Logo from '../../Assets/logo.png'
+import figmalogo from '../../Assets/figma.svg'
+import pslogo from '../../Assets/photoshop.svg'
+import ailogo from '../../Assets/illustrator.svg'
+import htmllogo from '../../Assets/html5.svg'
+import csslogo from '../../Assets/css3.svg'
+import reactlogo from '../../Assets/react.svg'
+import pic from '../../Assets/pic.png'
 import Top from '../../Assets/top.svg'
+import work1 from '../../Assets/work1.png'
 import Name from '../../Assets/Codeink1.png'
 import footerlogo from '../../Assets/footer logo.png'
+import Projectcard from '../../Componants/Projectcard/Projectcard.js'
 
 function Homepage() {
+  const [hoveredRole, setHoveredRole] = useState();
   const [loading, setLoading] = useState(false);
   const { ref:myRef, inView: isvisible} = useInView();
   const [showTopBtn, setShowTopBtn] = useState(false);
   const contactSectionRef = useRef(null);
   const workSectionRef = useRef(null);
-  // const resumeUrl = 'J:\\portfolio\\src\\Resume\\JawaharRL.pdf';
+  
 
   const pdfUrl = "/JawaharRl.pdf"; // Update this path to your PDF file
 
@@ -57,6 +67,8 @@ function Homepage() {
       });
     }
   };
+
+  
   
 
   const scrollToContact = () => {
@@ -69,6 +81,9 @@ function Homepage() {
     const yOffset = -100; 
     window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' });
 };
+
+
+
 
 
   useEffect(() => {
@@ -86,6 +101,7 @@ function Homepage() {
       behavior: "smooth",
     });
   };
+
   return (
     <div>
         <div className="container">
@@ -102,16 +118,53 @@ function Homepage() {
 
 {/* navends */}
 
+{/* bgstarts */}
 
+<div class="circle circle1"></div>
+<div class="circle circle2"></div>
+<div class="circle circle3"></div>
+<div class="circle circle4"></div>
+<div class="circle circle"></div>
+
+
+{/* bgends */}
 
 {/* photo starts */}
 
-          <div className="photo_container">
-            
 
 
+<div className={`photo_container ${hoveredRole}`}>
+      <div
+        className="roles designer"
+        onMouseEnter={() => setHoveredRole('designer-hover')}
+        onMouseLeave={() => setHoveredRole(null)}
+      >
+        Designer
+        <div  className="logo-set1">
+        <img className="design_logos" src={figmalogo} alt="" />
+        <img  className="design_logos" src={pslogo} alt="" />
+        <img  className="design_logos" src={ailogo} alt="" />
+        </div>
+      </div>
+      <div className="image_container">
+        <img className="profile_pic" src={pic} alt="Profile" />
+      </div>
+      <div
+        className="roles developer"
+        onMouseEnter={() => setHoveredRole('developer-hover')}
+        onMouseLeave={() => setHoveredRole(null)}
+      >
+        Developer
+        <div  className="logo-set2">
+        <img className="design_logos" src={htmllogo} alt="" />
+        <img  className="design_logos" src={csslogo} alt="" />
+        <img  className="design_logos" src={reactlogo} alt="" />
+        </div>
+      </div>
+    </div>
 
-          </div>
+
+ 
 
 
 
@@ -180,10 +233,10 @@ function Homepage() {
         </div>
           <div className="design_card">
            <div className="skill">
-           <h1>
+           <h1 id="skill_heading">
               Designer
             </h1>
-            <h3>
+            <h3  id="skill_description">
             I enjoy simple content, organized designs, 
             and interactions that make sense
             </h3>
@@ -217,10 +270,10 @@ function Homepage() {
  {/* devcard */}
  <div className="dev_card">
            <div className="skill">
-           <h1>
+           <h1 id="skill_heading">
            Frontend Development
             </h1>
-            <h3>
+            <h3 id="skill_description">
             Crafting code from the beginning and watching ideas 
             unfold in browsers excites me.
             </h3>
@@ -258,8 +311,24 @@ function Homepage() {
 
 
 {/* WORKS starts */}
-<div ref={workSectionRef }>
-        <h3 id="heading"><b>My works</b></h3>
+        <div ref={workSectionRef }>
+            <h3 id="heading"><b>My works</b></h3>
+        </div>
+        <h3 className="catagory">UI Projects</h3>
+        <div className="ui_projects">
+          
+        <Projectcard title="Weather app" button_name="Viwe figma" workimg={work1}/>
+        <Projectcard title="Taxi app" button_name="Viwe figma" />
+        <Projectcard title="Cloth website" button_name="Viwe figma" />
+        <Projectcard title="ERP Application" button_name="Viwe figma"/>
+      
+        </div>
+        <h3 className="catagory">Frontend Projects</h3>
+        <div className="ui_projects">
+          
+        <Projectcard />
+        <Projectcard />
+        <Projectcard />
         </div>
 {/* WORKS ends */}
 {/* contact starts */}
@@ -290,7 +359,7 @@ function Homepage() {
             <textarea name="message" placeholder="Your message" required></textarea>
           </div>
           </div>
-
+          {loading && < LineWave className="hi"color={'#7510F7'} loading={loading} size={50}  />}
           <div>
           <button type="submit" className="form_button">Send</button>
           </div>
@@ -298,7 +367,7 @@ function Homepage() {
          
         </form>
      
-        {loading && <LineWave color={'#062DF6'} loading={loading} size={50} />}
+       
       
 
        

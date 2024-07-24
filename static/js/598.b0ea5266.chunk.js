@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkportfolio=self.webpackChunkportfolio||[]).push([[598],{598:(e,p,o)=>{e.exports=o.p+"static/media/erpimg.783437f7ecea8b237d44.webp"}}]);

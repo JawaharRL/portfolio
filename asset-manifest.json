@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.c75341ed.css",
+    "main.css": "/portfolio/static/css/main.082a97b7.css",
     "main.js": "/portfolio/static/js/main.80cf6b2e.js",
     "static/js/453.1407b060.chunk.js": "/portfolio/static/js/453.1407b060.chunk.js",
     "static/media/Dongle-Bold.ttf": "/portfolio/static/media/Dongle-Bold.a239ec40fc2b724a26ae.ttf",
@@ -40,12 +40,12 @@
     "static/media/css3.svg": "/portfolio/static/media/css3.b072f246acdc133e21186cf72138a3b3.svg",
     "static/media/html5.svg": "/portfolio/static/media/html5.5a388de592bdf7a6f44ae2acc154efbc.svg",
     "static/media/top.svg": "/portfolio/static/media/top.864fabfe796cdeb70e2462cb2160ec86.svg",
-    "main.c75341ed.css.map": "/portfolio/static/css/main.c75341ed.css.map",
+    "main.082a97b7.css.map": "/portfolio/static/css/main.082a97b7.css.map",
     "main.80cf6b2e.js.map": "/portfolio/static/js/main.80cf6b2e.js.map",
     "453.1407b060.chunk.js.map": "/portfolio/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c75341ed.css",
+    "static/css/main.082a97b7.css",
     "static/js/main.80cf6b2e.js"
   ]
 }

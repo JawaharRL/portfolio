@@ -13,12 +13,12 @@ import csslogo from '../../Assets/css3.svg'
 import reactlogo from '../../Assets/react.svg'
 import pic from '../../Assets/pic.png'
 import Top from '../../Assets/top.svg'
+import Name from '../../Assets/Codeink1.png'
+import footerlogo from '../../Assets/footer logo.png'
 const erpimg =lazy(()=>import ('../../Assets/erpimg.webp'))
 const taxiappimg =lazy(()=>import ('../../Assets/taxiappimg.webp'))
 const weatherappimg =lazy(()=>import ('../../Assets/weatherappimg.webp'))
 const clothwebimg =lazy(()=>import ('../../Assets/clothwebimg.webp'))
-import Name from '../../Assets/Codeink1.png'
-import footerlogo from '../../Assets/footer logo.png'
 // import Projectcard from '../../Componants/Projectcard/Projectcard.js'
 const Projectcard =lazy(()=>import ('../../Componants/Projectcard/Projectcard.js'))
 

@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkportfolio=self.webpackChunkportfolio||[]).push([[820],{820:(e,p,t)=>{e.exports=t.p+"static/media/weatherappimg.7e90a76f20dc21f0d30d.webp"}}]);

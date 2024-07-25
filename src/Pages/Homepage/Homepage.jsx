@@ -235,7 +235,7 @@ function Homepage() {
 
             <div className="aboutme_body">
               <p>
-              Hello!, I am Jawahar, a UI/UX and graphic design enthusiast specializing in Adobe Photoshop, Illustrator, and Figma. With a strong foundation in design techniques and a commitment to continuous learning, I aim to support the company's success while enhancing my skills.
+              Hello!, I am Jawahar, a UI/UX and graphic design enthusiast specializing in Adobe Photoshop, Illustrator, and Figma. With a strong foundation in design techniques and a commitment to continuous learning.
               </p>
             </div>
 

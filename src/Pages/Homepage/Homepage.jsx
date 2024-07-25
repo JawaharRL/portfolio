@@ -234,11 +234,9 @@ function Homepage() {
 
 
             <div className="aboutme_body">
-              <p>Lorem, ipsum dolor sit amet consectetur 
-                adipisicing elit. Sapiente officiis nobis 
-                consequatur unde maiores velit exercitationem, 
-                nemo eaque laboriosam inventore fugit provident
-                soluta incidunt suscipit accusamus ad nam facere.</p>
+              <p>
+              Hello!, I am Jawahar, a UI/UX and graphic design enthusiast specializing in Adobe Photoshop, Illustrator, and Figma. With a strong foundation in design techniques and a commitment to continuous learning, I aim to support the company's success while enhancing my skills.
+              </p>
             </div>
 
 

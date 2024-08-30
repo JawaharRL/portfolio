@@ -394,7 +394,7 @@ ul>*{
 .projects{
     display: flex;
     flex-wrap: wrap;
-  padding: 30px clamp(10px,5vw,120px);
+    padding: 30px clamp(10px,5vw,120px);
     justify-content: space-evenly;
 }
 .catagory{

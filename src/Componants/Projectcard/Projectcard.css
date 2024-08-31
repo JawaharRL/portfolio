@@ -13,6 +13,7 @@
     align-items: center;
     flex-direction: column;
     width: fit-content;
+    min-width: 150px;
     background: linear-gradient(163deg, #C99FFF 46.41%, #A46CEC 88.13%);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     margin: clamp(10px,5vw,0px);

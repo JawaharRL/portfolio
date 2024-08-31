@@ -49,17 +49,17 @@ function Homepage() {
   const workSectionRef = useRef(null);
   
 
-  const pdfUrl = "/JawaharRL-Resume.pdf"; 
+  const pdfUrl = "/JawaharRL-Resume.pdf";
 
   const handleDownload = () => {
     const link = document.createElement('a');
-    link.href = pdfUrl;
-    link.download = 'JawaharRL-Resume.pdf'; // Specify the name for the downloaded file
+    link.setAttribute('href', pdfUrl);
+    link.setAttribute('download', 'JawaharRL-Resume.pdf');
+    link.style.display = 'none';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
   };
-
   const onSubmit = async (event) => {
     event.preventDefault();
   
@@ -226,17 +226,17 @@ function Homepage() {
           <div className="about_container">
 
             
-            <div>              
+            {/* <div>              
               <h2 className="aboutme_heading">
                 Hi, Nice to meet you!
               </h2>
-            </div>
+            </div> */}
 
 
             <div className="aboutme_body">
               <p>
-              Hello!, I am Jawahar, a UI/UX and graphic design enthusiast specializing in Adobe Photoshop, Illustrator, and Figma. With a strong foundation in design techniques and a commitment to continuous learning.
-              </p>
+              Hello! I'm Jawahar, a passionate UI/UX designer and frontend developer. I have strong skills in design tools like Figma and Adobe Creative Cloud, as well as coding with HTML, CSS, and React.
+            </p>
             </div>
 
 

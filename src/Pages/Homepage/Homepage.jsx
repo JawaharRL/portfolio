@@ -49,7 +49,7 @@ function Homepage() {
   const workSectionRef = useRef(null);
   
 
-  const pdfUrl = "/JawaharRL-Resume.pdf";
+  const pdfUrl = "/JawaharRL-Resume.pdf"; 
 
   const handleDownload = () => {
     const link = document.createElement('a');

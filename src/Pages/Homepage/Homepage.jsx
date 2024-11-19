@@ -18,7 +18,7 @@ import portfoliocode from '../../Assets/portfoliocode.png'
 import erpcode from '../../Assets/erpcode.png'
 import erpimg from '../../Assets/erpimg.webp'
 import taxiappimg from '../../Assets/taxiappimg.webp'
-import clothwebimg from '../../Assets/clothwebimg.webp'
+import schoolwebimg from '../../Assets/schoolwebimg.png'
 import weatherappimg from '../../Assets/weatherappimg.webp'
 import taxiappsignup from '../../Assets/taxiappsignup.jpeg'
 import restaurantposter from '../../Assets/restaurantposter.webp'
@@ -32,7 +32,7 @@ function Homepage() {
   const weatherapplink="https://www.figma.com/design/pFmN8Sc2sOfUAgjHEiKkhd/Weather-app?node-id=2-2&t=QZdVzgGzG5qPbzde-1"
   const taxiappsignuplink="https://www.figma.com/design/xE4Uvd5oZ1BGlx72JAB4AG/Tagyourtaxi?node-id=0-1&t=nPiTF1VPxBxbIS9i-1"
   const erpimglink="https://www.figma.com/design/k08kclPuAvi9VwdvQT6nEj/ERP?node-id=470-262&t=pyS2g6s8lLx309vc-1"
-  const clothwebimglink="https://www.figma.com/design/RRthXppkyvAgzAnLXbvQse/Clothweb?node-id=0-1&t=O8V6zuQBXPXhMNYB-1"
+  const schoolwebimglink="https://www.figma.com/design/fJalQSIXfRfQA1CMlyzAku/school?node-id=0-1&t=wWnsdX3Hs9Vca3j8-1"
   const taxiappimglink="."
 
   const restaurantposterlink="/restaurantposter.webp"
@@ -338,7 +338,7 @@ function Homepage() {
         <h3 className="catagory">UI Projects</h3>
         <div className="projects">
 
-        <Projectcard title="Cloth website" button_name="View figma" workimg={clothwebimg} goto={clothwebimglink}/> 
+        <Projectcard title="School website" button_name="View figma" workimg={schoolwebimg} goto={schoolwebimglink}/> 
         <Projectcard title="ERP Application" button_name="View figma" workimg={erpimg} goto={erpimglink}/>
         <Projectcard title="Taxi app signup flow" button_name="View figma" workimg={taxiappsignup} goto={taxiappsignuplink}/>
         <Projectcard title="Weather app" button_name="View figma" workimg={weatherappimg} goto={weatherapplink} />
